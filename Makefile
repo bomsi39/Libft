@@ -6,7 +6,7 @@
 #    By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/25 18:24:09 by dfranke           #+#    #+#              #
-#    Updated: 2021/06/16 21:35:44 by dfranke          ###   ########.fr        #
+#    Updated: 2022/01/11 18:42:59 by dfranke          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,3 @@ fclean: clean
 re: clean all
 
 .PHONY: bonus all clean fclean re
-
-so:		 		$(CC) -fPIC $(CFLAGS) -c $(SRCS) $(SRCS_B)
-				gcc -shared -o libft.so $(OBJS) $(OBJS_B)
